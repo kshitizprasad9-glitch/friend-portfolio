@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Puja's Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family:'Quicksand',sans-serif;
+background:#eaf6ff;
+color:#333;
+text-align:center;
+overflow-x:hidden;
+}
+
+header{
+padding:100px 20px;
+}
+
+h1{
+font-size:40px;
+color:#2b7dbd;
+}
+
+p{
+font-size:18px;
+}
+
+button{
+background:#87ceeb;
+border:none;
+padding:12px 30px;
+border-radius:25px;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+transform:scale(1.1);
+box-shadow:0 10px 20px rgba(0,0,0,0.1);
+}
+
+section{
+padding:60px 20px;
+}
+
+.card{
+background:white;
+max-width:500px;
+margin:20px auto;
+padding:25px;
+border-radius:20px;
+box-shadow:0 8px 20px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.skills span{
+background:#cfefff;
+padding:8px 15px;
+margin:5px;
+display:inline-block;
+border-radius:20px;
+}
+
+.bear{
+position:fixed;
+bottom:30px;
+right:30px;
+width:120px;
+animation:float 6s ease-in-out infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(0)}
+50%{transform:translateY(-20px)}
+100%{transform:translateY(0)}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Hi, Puja (aka Piao) 💙</h1>
+
+<p>Welcome to my cute little space on the internet ☁️</p>
+
+<button onclick="scrollToProjects()">View Projects</button>
+
+</header>
+
+<section>
+
+<div class="card">
+
+<h2>About Me</h2>
+
+<p>
+Write something cute about her here.  
+Example: I love creating things, exploring art and spending time watching We Bare Bears.
+</p>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<div class="card">
+<h3>Project One</h3>
+<p>Short description of project</p>
+</div>
+
+<div class="card">
+<h3>Project Two</h3>
+<p>Short description of project</p>
+</div>
+
+</section>
+
+<section>
+
+<div class="card">
+
+<h2>Skills</h2>
+
+<div class="skills">
+
+<span>HTML</span>
+<span>CSS</span>
+<span>Design</span>
+<span>Art</span>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="card">
+
+<h2>Contact</h2>
+
+<p>Email: pujaprasad946@gmail.com</p>
+
+<p>Instagram: @prasadpuja8</p>
+
+</div>
+
+</section>
+
+<img src="bear.gif" class="bear">
+
+<script>
+
+function scrollToProjects(){
+document.getElementById("projects").scrollIntoView({
+behavior:"smooth"
+});
+}
+
+</script>
+
+</body>
+</html>
